@@ -5,41 +5,53 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
-
-
+	<script src="js/myjs.js"></script>
 	<body>
-		<header>
-			<nav>
-				<div class="top">
-					<ul class="menu" style="text-decoration:none;">
-						<a href="index.html" style="color:white; padding-right:13px; text-decoration:none;">AAAAAA</a></li>
-						<a href="index.html" style="color:white; padding-right:13px; text-decoration:none;">BBBBBB</a></li>
-						<a href="index.html" style="color:white; padding-right:13px; text-decoration:none;">CCCCCC</a></li>
-						<a href="index.html" style="color:white; padding-right:13px; text-decoration:none;">DDDDDD</a></li>
-						<!-- 爲什麼放li了background color不可以用
-							 ps.放了li需要在css加上.menu li{float:left才會平行}
-						-->
-						<a href="https://www.facebook.com/lim.wensheng" class="fa fa-facebook" target="_blank" style="float:right; padding-top:5px; padding-right:15px; color:white; font-size:20px; text-decoration:none;">&nbsp;</a>
-						<a href="https://www.github.com/tundergod" class="fa fa-github " target="_blank" style="float:right; padding-top:5px; padding-right:10px; color:white; font-size:20px; text-decoration:none;">&nbsp;</a>
+		<nav class="navigation">
+			<li><a href="#main" title="Home"> <i class="fa fa-home fa-fw"></i></a></li>
+			<li><a href="#about" title="About me"> <i class="fa fa-male fa-fw"></i> </a></li>
+			<li><a href="#timeline" title="Timeline"> <i class="fa fa-clock-o fa-fw"></i> </a></li>
+			<li><a href="#skills" title="Skills"> <i class="fa fa-tasks fa-fw"></i> </a></li>
+			<li><a href="#projects" title="Projects"> <i class="fa fa-code fa-fw"></i> </a></li>
+			<li><a href="#contact" title="Contact me"> <i class="fa fa-phone fa-fw"></i> </a></li>
+		</nav>
+		<section id="main" class="main">
+			<div class="container-main">
+				<video autoplay="" muted="">
+            		<source src="video/bg.mp4" type="video/mp4">
+        		</video>
+				<div id="intro" style="font-size:120px; margin-top:150px;">HELLO</div>
+				<div id="intro" style="font-size:60px; margin-top:280px;">&nbsp;I am Lim Wen Sheng</div>
+				<div id="intro" style="font-size:60px; margin-top:360px">&nbsp;&nbsp;I study at NCKU</div>
+				<div id="intro" style="font-size:60px; margin-top:420px;">&nbsp;&nbsp;&nbsp;I like
+					<ul class="slider">
+						<li id="word" style="margin-left:-45px; margin-top:-30px;">Programming</li>
 					</ul>
 				</div>
-			</nav>		
-		</header>
-		<div class="pic">
-				<div id="slidePic" style="background-image:url(pic/mn1.jpg);"></div>
-				<div><img id="leftArrow" src="pic/leftArrow.png"></div>
-				<div><img id="rightArrow" src="pic/leftArrow.png"></div>
+			</div>
+		</section>
 
-				<div class="dot">
-					<img id="dotBefore1" src="pic/dot1.png">
-					<img id="dotBefore2" src="pic/dot1.png">
-					<img id="dotBefore3" src="pic/dot1.png">
-					<img id="dotBefore4" src="pic/dot1.png">
-					<img id="dotBefore5" src="pic/dot1.png">
-					<img id="dotBefore6" src="pic/dot1.png">
-					<img id="dotBefore7" src="pic/dot1.png">
-				</div>
-		</div>
+		<section id="about" class="about">
+			<div class="container-about">
+				<img src="pic/bg1.jpg">
+					<div class="about-me">
+						<h1>About Me</h1>
+							<p>Although I try to be a comprehensive programmer, my main specialization is .NET. I believe that only a combination of professional code and modern design can give stunning effects. Programming is not only my job, it is also my passion. To develop, I set myself new challenges all the time. I consider myself inventive and ambitious, hence I am constantly looking for original solutions. Aside from programming I like squash, skiing and football (as a player, not a fan). Some also say that I am good at drawing.</p>
+					</div>
+					<div class="skill">	
+						<h1 class="shadow">SKILL</h1>
+						<ul>
+							<h3 class="shadow">Linux</h3>
+								<li>performance analysis and improvement with perf , gunplot ,GDB and etc</li>
+							<h3 class="shadow">Memory Allocator</h3>
+								<li>Theory and implementation of Supermalloc, Ptmalloc and etc</li>
+							<h3 class="shadow">Auto colorization</h3>
+								<li>Analysis and Opimization auto colorization method with deep learning</li>
+							<h3 class="shadow">Git</h3>
+								<li>familiar with usage of all common and advance command</li>
+						</ul>
+					</div>
+			</div>
+		</section>
 	</body>
-	<script src="js/myjs.js"></script>
 </html>
