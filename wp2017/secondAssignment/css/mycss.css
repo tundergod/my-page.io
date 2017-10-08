@@ -1,0 +1,99 @@
+html,body{
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+.navigation{
+	width:100%;
+	position:absolute;
+	list-style-type:none;
+	margin-top:40px;
+	z-index:2;
+}
+.navigation a{
+	position:relative;
+	text-decoration:none;
+	margin-right:20px;
+	color:white;
+	font-size:25px;
+	font-weight:bold;
+	float:right;	
+}
+#main{
+	position:relative;
+	float:left;
+	margin-left:40px;
+	font-size:30px;
+	font-weight:bold;
+}
+.pic{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-size:cover;
+    overflow:hidden;
+    display:inline-block;
+	background-color:blue;
+	z-index:1;
+}
+.detail{
+	position:relative;
+	display:inline-block;
+	width:100%;
+	height:60%;
+	background-color:red;
+	z-index:3;
+	margin-top:10%;
+}
+.detail-text{
+	position:absolute;
+	background-color:green;
+	height:90%;
+	margin-top:1.4%;
+	margin-left:10px;
+	width:99%;
+    overflow:hidden;
+}
+.text{
+	position:relative;
+	background-size:cover;
+    overflow:hidden;
+    display:inline-block;
+	background-color:blue;
+	height:90%;
+	width:35%;
+	margin-left:20px;
+	margin-top:1.4%;
+	font-size:100px;
+	text-align:center;
+	margin:auto;
+}
+.slide-pic{
+	position:relative;
+    background-size:cover;
+    overflow:hidden;
+    display:inline-block;
+    background-color:black;
+    height:90%;
+	max-width:60%;
+    margin-left:20px;
+    margin-top:1.4%;
+	white-space:nowrap;
+
+}
+.slide-pic ul li{
+	list-style-type:none;
+	display:inline;
+}
+.slide-pic li img{
+}
+.slide-pic img{
+	height:300px;
+	width:25%;
+    background-size:cover;
+    display:inline-block;
+	margin-top:1.4%;
+	margin-bottom:1.4%;
+	margin-right:1.4%;
+	margin-left:1.4%;
+}
