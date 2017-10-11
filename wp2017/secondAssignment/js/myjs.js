@@ -1,5 +1,11 @@
 $(document).ready(function(){
+	$(".slide-pic").hide();
+	$("#lol").hide();
 	$('body').pointer();
+	clickText();
+	picSlide();
+	picClick();
+	paint();
 });
 
 (function($){
@@ -7,7 +13,7 @@ $(document).ready(function(){
 		var settings = {
 			size : 80,
 			spd : 400,
-			color : "white"
+			color : "purple"
 		}
 		settings = $.extend(settings, options);
 		
@@ -42,4 +48,36 @@ $(document).ready(function(){
 			});
 		});
 	}
-})(jQuery); 
+})(jQuery);
+
+
+function clickText(){
+	$("#text").click(function(){
+		if($(".slide-pic").is("visible"));
+		else{
+			$(".slide-pic").toggle("slide",{direction:"right"},1000);
+			$("#lol").show(function(){
+				$("#lol").fadeIn("slow");
+			});
+		}
+	});
+};
+
+function picSlide(){
+	$('.slide-pic').slick({
+  		dots: true,
+  		infinite: false,
+  		speed: 800,
+  		slidesToShow: 1,
+		centerMode: false,
+  		variableWidth: true,
+		arrows:false
+	});
+};
+/*
+function picClick(){
+	$("slide-pic").click(function(){
+		$("#pic1").css({height:"+=10%",width:"+=10%"});
+	});
+};
+*/
