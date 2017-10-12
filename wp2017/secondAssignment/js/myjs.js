@@ -1,13 +1,20 @@
 $(document).ready(function(){
 	$(".slide-pic").hide();
 	$("#lol").hide();
+	$("#text").hide();
 	$('body').pointer();
 	clickText();
 	picSlide();
-	picClick();
-	paint();
+	text();
 });
 
+function text(){
+	setInterval(function(){
+		$("#text").show(function(){
+			$("#text").fadeIn(100);
+		});
+	},700);
+};
 (function($){
 	$.fn.pointer = function (options) {
 		var settings = {
