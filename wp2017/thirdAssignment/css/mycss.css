@@ -5,6 +5,9 @@ html,body{
 	margin:auto;
 	font-family: 'Raleway';
 }
+#output{
+  font-color:white;
+}
 .navigation{
 	width:100%;
 	position:absolute;

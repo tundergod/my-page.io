@@ -6,6 +6,21 @@ $(document).ready(function(){
 	clickText();
 	picSlide();
 	text();
+
+var ajaxtext = $("#try").val();
+
+  $("#button").click(function(){
+    console.log(ajaxtext);
+    console.log("hello ajax")
+    $.ajax({
+      type: "GET",
+      url: "/tryajax",
+      data : ajaxtext,
+      success: function(data) {
+        $("#show").html(data);
+      }
+    })
+  })
 });
 
 function text(){

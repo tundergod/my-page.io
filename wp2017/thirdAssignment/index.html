@@ -13,12 +13,21 @@
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://XX.XX.XX.XX:8084/mypp/">
     </head>
 	<script src="js/myjs.js"></script>
 	<body>
 		<nav class="navigation">
             <a href="." id="main">RESUME</a>
-       		<a href="#3" style="margin-right:40px;">33333</a>
+
+            <form id="ajax-form">
+                  <input type="text" name="input">
+                  <button type="submit" id="button">click me</button>
+        <font color=white>          <span id="output" style="color:white;"></span></font>
+            </form>
+            <script src="try.js"></script>
+
+       	    <a href="#3" style="margin-right:40px;">33333</a>
             <a href="#2">22222</a>
             <a href="#1">11111</a>
         </nav>
